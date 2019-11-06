@@ -870,7 +870,7 @@ section.lazy-placeholder:after {
 .cid-rH4o4KISIN {
   padding-top: 90px;
   padding-bottom: 90px;
-  background-image: url("../../../assets/images/library-2000x1500.jpg");
+  background-image: url("../../../assets/images/library.jpg");
 }
 .cid-rH4o4KISIN p {
   margin-bottom: 0;
@@ -922,4 +922,7 @@ section.lazy-placeholder:after {
 }
 .cid-rH4o4KISIN H4 {
   color: #ffffff;
+}
+.cid-rH4o4KISIN .mbr-section-title {
+  color: #232323;
 }

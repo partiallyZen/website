@@ -865,6 +865,18 @@ section.lazy-placeholder:after {
 .cid-rH4o4KISIN .mbr-section-title {
   color: #c1c1c1;
 }
+.cid-rHhiHxg1V1 {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background: linear-gradient(0deg, #7fdbfd, #6670a9);
+}
+.cid-rHhiHxg1V1 .mbr-iconfont-social {
+  font-size: 32px;
+  color: #ff3366;
+}
+.cid-rHhiHxg1V1 .social-list a:focus {
+  text-decoration: none;
+}
 .cid-rFSyUsdbbI {
   padding-top: 90px;
   padding-bottom: 90px;

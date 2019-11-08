@@ -732,68 +732,6 @@ section.lazy-placeholder:after {
   color: #595959;
   text-align: center;
 }
-.cid-rFSyUsdbbI {
-  padding-top: 90px;
-  padding-bottom: 90px;
-  background-color: #faf1d2;
-}
-.cid-rFSyUsdbbI h2 {
-  text-align: left;
-}
-.cid-rFSyUsdbbI h4 {
-  text-align: left;
-  font-weight: 500;
-}
-.cid-rFSyUsdbbI p {
-  color: #767676;
-  text-align: left;
-}
-.cid-rFSyUsdbbI .aside-content {
-  flex-basis: 100%;
-  -webkit-flex-basis: 100%;
-}
-.cid-rFSyUsdbbI .block-content {
-  display: -webkit-flex;
-  flex-direction: column;
-  -webkit-flex-direction: column;
-  word-break: break-word;
-}
-.cid-rFSyUsdbbI .media {
-  margin: initial;
-  align-items: center;
-  -webkit-align-items: center;
-}
-.cid-rFSyUsdbbI .mbr-figure {
-  align-self: flex-start;
-  -webkit-align-self: flex-start;
-  -webkit-flex-shrink: 0;
-  flex-shrink: 0;
-}
-.cid-rFSyUsdbbI .card-img {
-  padding-right: 2rem;
-  width: auto;
-}
-.cid-rFSyUsdbbI .card-img span {
-  font-size: 72px;
-  color: #707070;
-}
-@media (min-width: 992px) {
-  .cid-rFSyUsdbbI .mbr-figure {
-    padding-right: 4rem;
-  }
-}
-@media (max-width: 991px) {
-  .cid-rFSyUsdbbI .mbr-figure {
-    padding-right: 0;
-    padding-bottom: 1rem;
-    margin-bottom: 2rem;
-  }
-}
-@media (max-width: 300px) {
-  .cid-rFSyUsdbbI .card-img span {
-    font-size: 40px !important;
-  }
-}
 .cid-rFStPlbm5F {
   background-image: url("../../../assets/images/the-path-less-traveled-2000x1124.jpg");
 }
@@ -926,4 +864,66 @@ section.lazy-placeholder:after {
 }
 .cid-rH4o4KISIN .mbr-section-title {
   color: #c1c1c1;
+}
+.cid-rFSyUsdbbI {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-color: #faf1d2;
+}
+.cid-rFSyUsdbbI h2 {
+  text-align: left;
+}
+.cid-rFSyUsdbbI h4 {
+  text-align: left;
+  font-weight: 500;
+}
+.cid-rFSyUsdbbI p {
+  color: #767676;
+  text-align: left;
+}
+.cid-rFSyUsdbbI .aside-content {
+  flex-basis: 100%;
+  -webkit-flex-basis: 100%;
+}
+.cid-rFSyUsdbbI .block-content {
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  word-break: break-word;
+}
+.cid-rFSyUsdbbI .media {
+  margin: initial;
+  align-items: center;
+  -webkit-align-items: center;
+}
+.cid-rFSyUsdbbI .mbr-figure {
+  align-self: flex-start;
+  -webkit-align-self: flex-start;
+  -webkit-flex-shrink: 0;
+  flex-shrink: 0;
+}
+.cid-rFSyUsdbbI .card-img {
+  padding-right: 2rem;
+  width: auto;
+}
+.cid-rFSyUsdbbI .card-img span {
+  font-size: 72px;
+  color: #707070;
+}
+@media (min-width: 992px) {
+  .cid-rFSyUsdbbI .mbr-figure {
+    padding-right: 4rem;
+  }
+}
+@media (max-width: 991px) {
+  .cid-rFSyUsdbbI .mbr-figure {
+    padding-right: 0;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 300px) {
+  .cid-rFSyUsdbbI .card-img span {
+    font-size: 40px !important;
+  }
 }

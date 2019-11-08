@@ -35,7 +35,7 @@
     "path": "@PROJECT_PATH@",
     "versionFirst": "4.11.3",
     "siteFonts": [],
-    "uniqCompNum": 33,
+    "uniqCompNum": 35,
     "versionPublish": "4.11.4",
     "screenshot": "screenshot.png",
     "favicon": "",
@@ -154,7 +154,7 @@
             }
           },
           "_name": "header12",
-          "_customHTML": "<section class=\"header12\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" plugins=\"VimeoPlayer\" mbr-class=\"{'mbr-fullscreen': fullScreen,'mbr-parallax-background' :bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <input type=\"checkbox\" title=\"Show Icons\" name=\"showIcons\" checked>\n        <input type=\"checkbox\" title=\"Show Arrow\" name=\"showArrow\">\n\n        <select title=\"Columns\" name=\"cardsCount\">\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\" selected>4</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/the-path-less-traveled-2000x1124.jpg\" selected parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#0f7699\">\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container  \">\n            <div class=\"media-container\">\n                <div class=\"col-md-12 align-center\">\n                    <h1 class=\"mbr-section-title pb-3 mbr-white mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">Why are you here?</h1>\n                    <p class=\"mbr-text pb-3 mbr-white mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Search your heart and pick your path.</p>\n                    <div class=\"mbr-section-btn align-center py-2\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-md btn-secondary\" href=\"https://mobirise.co\" data-app-placeholder=\"Type Text\">MORE</a></div>\n\n                    <div class=\"icons-media-container mbr-white\">\n                        <div class=\"card col-12 col-md-6\" mbr-class=\"{'col-lg-3':cardsCount=='4', 'col-lg-4':cardsCount=='3'}\">\n                            <div mbr-if=\"showIcons\" class=\"icon-block\">\n                            <a href=\"writing.html\">\n                                <span mbr-icon class=\"mbr-iconfont mbri-edit2\"></span>\n                            </a>\n                            </div>\n                            <h5 mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" class=\"mbr-fonts-style\">\n                                Create</h5>\n                        </div>\n\n                        <div class=\"card col-12 col-md-6\" mbr-class=\"{'col-lg-3':cardsCount=='4', 'col-lg-4':cardsCount=='3'}\">\n                            <div mbr-if=\"showIcons\" class=\"icon-block\">\n                                <a href=\"meditate.html\">\n                                    <span mbr-icon class=\"mbr-iconfont mbri-preview\"></span>\n                                </a>\n                            </div>\n                            <h5 mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" class=\"mbr-fonts-style\">\n                                Meditate</h5>\n                        </div>\n\n                        <div class=\"card col-12 col-md-6\" mbr-class=\"{'col-lg-3':cardsCount=='4', 'col-lg-4':cardsCount=='3'}\" mbr-if=\"cardsCount>2\">\n                            <div mbr-if=\"showIcons\" class=\"icon-block\">\n                                <a href=\"contemplate.html\">\n                                    <span mbr-icon class=\"mbr-iconfont mbri-cloud\"></span>\n                                </a>\n                            </div>\n                            <h5 mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" class=\"mbr-fonts-style\">\n                                Contemplate</h5>\n                        </div>\n\n                        <div class=\"card col-12 col-md-6\" mbr-class=\"{'col-lg-3':cardsCount=='4', 'col-lg-4':cardsCount=='3'}\" mbr-if=\"cardsCount>3\">\n                            <div mbr-if=\"showIcons\" class=\"icon-block\">\n                                <a href=\"page8.html\">\n                                    <span mbr-icon class=\"mbr-iconfont mbri-cursor-click\"></span>\n                                </a>\n                            </div>\n                            <h5 mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" class=\"mbr-fonts-style\">\n                                Reverberate</h5>\n                        </div>\n                    </div>\n                </div>\n            </div>\n    </div>\n\n    <div mbr-if=\"showArrow\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n        <a href=\"#next\">\n            <i class=\"mbri-down mbr-iconfont\"></i>\n        </a>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"header12\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" plugins=\"VimeoPlayer\" mbr-class=\"{'mbr-fullscreen': fullScreen,'mbr-parallax-background' :bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <input type=\"checkbox\" title=\"Show Icons\" name=\"showIcons\" checked>\n        <input type=\"checkbox\" title=\"Show Arrow\" name=\"showArrow\">\n\n        <select title=\"Columns\" name=\"cardsCount\">\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\" selected>4</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/the-path-less-traveled-2000x1124.jpg\" selected parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#0f7699\">\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container  \">\n            <div class=\"media-container\">\n                <div class=\"col-md-12 align-center\">\n                    <h1 class=\"mbr-section-title pb-3 mbr-white mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">Why are you here?</h1>\n                    <p class=\"mbr-text pb-3 mbr-white mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Search your heart and pick your path.</p>\n                    <div class=\"mbr-section-btn align-center py-2\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-md btn-secondary\" href=\"https://mobirise.co\" data-app-placeholder=\"Type Text\">MORE</a></div>\n\n                    <div class=\"icons-media-container mbr-white\">\n                        <div class=\"card col-12 col-md-6\" mbr-class=\"{'col-lg-3':cardsCount=='4', 'col-lg-4':cardsCount=='3'}\">\n                            <div mbr-if=\"showIcons\" class=\"icon-block\">\n                            <a href=\"writing.html\">\n                                <span mbr-icon class=\"mbr-iconfont mbri-edit2\"></span>\n                            </a>\n                            </div>\n                            <h5 mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" class=\"mbr-fonts-style\">\n                                Create</h5>\n                        </div>\n\n                        <div class=\"card col-12 col-md-6\" mbr-class=\"{'col-lg-3':cardsCount=='4', 'col-lg-4':cardsCount=='3'}\">\n                            <div mbr-if=\"showIcons\" class=\"icon-block\">\n                                <a href=\"meditate.html\">\n                                    <span mbr-icon class=\"mbr-iconfont mbri-preview\"></span>\n                                </a>\n                            </div>\n                            <h5 mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" class=\"mbr-fonts-style\">\n                                Meditate</h5>\n                        </div>\n\n                        <div class=\"card col-12 col-md-6\" mbr-class=\"{'col-lg-3':cardsCount=='4', 'col-lg-4':cardsCount=='3'}\" mbr-if=\"cardsCount>2\">\n                            <div mbr-if=\"showIcons\" class=\"icon-block\">\n                                <a href=\"contemplate.html\">\n                                    <span mbr-icon class=\"mbr-iconfont mbri-cloud\"></span>\n                                </a>\n                            </div>\n                            <h5 mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" class=\"mbr-fonts-style\">\n                                Contemplate</h5>\n                        </div>\n\n                        <div class=\"card col-12 col-md-6\" mbr-class=\"{'col-lg-3':cardsCount=='4', 'col-lg-4':cardsCount=='3'}\" mbr-if=\"cardsCount>3\">\n                            <div mbr-if=\"showIcons\" class=\"icon-block\">\n                                <a href=\"contact.html\">\n                                    <span mbr-icon class=\"mbr-iconfont mbri-cursor-click\"></span>\n                                </a>\n                            </div>\n                            <h5 mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" class=\"mbr-fonts-style\">\n                                Reverberate</h5>\n                        </div>\n                    </div>\n                </div>\n            </div>\n    </div>\n\n    <div mbr-if=\"showArrow\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n        <a href=\"#next\">\n            <i class=\"mbri-down mbr-iconfont\"></i>\n        </a>\n    </div>\n</section>",
           "_cid": "rFStPlbm5F",
           "_anchor": "header12-7",
           "_protectedParams": [],
@@ -386,7 +386,112 @@
         "title": "Vlog",
         "order": 8
       },
-      "components": []
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#767676",
+              "font-weight": "300"
+            },
+            ".number-wrap": {
+              "color": "@labelsColor",
+              "border-color": "rgba(255, 255, 255, 0.15)",
+              "position": "relative",
+              "display": "inline-block",
+              "text-align": "center",
+              "padding": "5px 10px 13px 10px",
+              "margin": "0",
+              "min-width": "118px",
+              "border-radius": "2px",
+              "max-width": "100%"
+            },
+            ".number": {
+              "font-style": "normal",
+              "font-weight": "700",
+              "font-size": "55px",
+              "text-transform": "none",
+              "letter-spacing": "-2px",
+              "word-spacing": "0",
+              "line-height": "1.3",
+              "color": "@numbersColor"
+            },
+            ".period": {
+              "display": "block",
+              "padding-top": "2px",
+              "border-top": "1px solid rgba(0, 0, 0, 0.1)"
+            },
+            ".dot": {
+              "position": "absolute",
+              "top": "-10px",
+              "right": "-1em",
+              "width": "1em",
+              "display": "block",
+              "height": "83%",
+              "overflow": "hidden",
+              "font-style": "normal",
+              "font-weight": "700",
+              "font-size": "55px",
+              "line-height": "89.65px",
+              "text-transform": "none",
+              "letter-spacing": "0",
+              "word-spacing": "0",
+              "color": "@numbersColor"
+            },
+            ".countdown-cont": {
+              "max-width": "700px",
+              "margin": "0 auto"
+            },
+            "@media (max-width: 768px)": {
+              ".dot": {
+                "display": "none"
+              }
+            },
+            "@media (max-width: 543px)": {
+              ".number-wrap": {
+                "margin-bottom": "15px"
+              }
+            },
+            "@media (max-width: 550px)": {
+              ".col-xs-3": {
+                "padding-left": "0",
+                "padding-right": "0",
+                "max-width": "25%",
+                "flex": "0 0 25%"
+              },
+              ".number-wrap": {
+                "min-width": "auto"
+              }
+            },
+            "@media (max-width: 440px)": {
+              ".number, .dot": {
+                "font-size": "40px"
+              }
+            },
+            "@media (max-width: 380px)": {
+              ".period": {
+                "font-size": "0.8rem"
+              }
+            }
+          },
+          "_name": "countdown1",
+          "_customHTML": "<section class=\"countdown1\" group=\"Countdowns\" plugins=\"countdown\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"6\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"text\" title=\"Countdown\" name=\"countdown\" value=\"2019/11/18\">\n        <input type=\"text\" inline title=\"Days\" name=\"daysCountdown\" value=\"Days\">\n        <input type=\"text\" inline title=\"Hours\" name=\"hoursCountdown\" value=\"Hours\">\n        <input type=\"text\" inline title=\"Minutes\" name=\"minutesCountdown\" value=\"Minutes\">\n        <input type=\"text\" inline title=\"Seconds\" name=\"secondsCountdown\" value=\"Seconds\">\n        <input type=\"color\" title=\"Numbers Color\" name=\"numbersColor\" value=\"#232323\">\n        <input type=\"color\" title=\"Labels Color\" name=\"labelsColor\" value=\"#4f4943\">\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background2.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"container \">\n        <h2 class=\"mbr-section-title pb-3 align-center mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">\n            Countdown\n        </h2>\n        <h3 class=\"mbr-section-subtitle align-center mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">\n            This Vlog will go live soon!</h3>\n        \n    </div>\n    <div class=\"container countdown-cont align-center\">\n        <div title=\"{{daysCountdown}}\" class=\"daysCountdown\"></div>\n        <div title=\"{{hoursCountdown}}\" class=\"hoursCountdown\"></div> \n        <div title=\"{{minutesCountdown}}\" class=\"minutesCountdown\"></div> \n        <div title=\"{{secondsCountdown}}\" class=\"secondsCountdown\"></div>\n        <div class=\"countdown pt-5 mt-2\" data-due-date=\"{{countdown}}\"> \n        </div>\n    </div>\n</section>",
+          "_cid": "rHhl7XyMIb",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "countdown1-y"
+        }
+      ]
     },
     "gallery.html": {
       "settings": {
@@ -425,7 +530,7 @@
             }
           },
           "_name": "social-buttons2",
-          "_customHTML": "<section group=\"Social\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" plugins=\"SocialLikes\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input inline type=\"range\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"6\">\n        <input inline type=\"range\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"6\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        \n        <input type=\"color\" title=\"Icons Color\" name=\"iconsColor\" value=\"#ff3366\"> \n        <select title=\"Icons\" name=\"iconsCount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n            <option value=\"5\" selected>5</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background4.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#6670a9\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"color\" title=\"color2\" name=\"color2\" condition=\"bg.type=='color'\" value=\"#7fdbfd\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.9\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"col-md-8 align-center\">\n                <h2 class=\"pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">\n                    FOLLOW CHA BOI!\n                </h2>\n                <div class=\"social-list pl-0 mb-0\">\n                    <a href=\"https://twitter.com/partiallyzen\" target=\"_blank\">\n                        <span mbr-icon class=\"px-2 mbr-iconfont mbr-iconfont-social socicon-twitter socicon\"></span>\n                    </a>\n                    <a href=\"https://github.com/partiallyZen/\" target=\"_blank\">\n                        <span mbr-icon class=\"px-2 mbr-iconfont mbr-iconfont-social socicon-github socicon\" mbr-if=\"iconsCount > 1\"></span>\n                    </a>\n                    <a href=\"https://www.instagram.com/partiallyzen/\" target=\"_blank\">\n                        <span mbr-icon class=\"px-2 mbr-iconfont mbr-iconfont-social socicon-instagram socicon\" mbr-if=\"iconsCount > 2\"></span>\n                    </a>\n                    <a href=\"https://www.youtube.com/channel/UC9k1MMCGIVLjgVmaWpXJ4Aw\" target=\"_blank\">\n                        <span mbr-icon class=\"px-2 mbr-iconfont mbr-iconfont-social socicon-youtube socicon\" mbr-if=\"iconsCount > 3\"></span>\n                    </a>\n                    <a href=\"https://www.reddit.com/user/kstauch\" target=\"_blank\">\n                        <span mbr-icon class=\"px-2 mbr-iconfont mbr-iconfont-social socicon-reddit socicon\" mbr-if=\"iconsCount > 4\"></span>\n                    </a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section group=\"Social\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" plugins=\"SocialLikes\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input inline type=\"range\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"8\">\n        <input inline type=\"range\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"8\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        \n        <input type=\"color\" title=\"Icons Color\" name=\"iconsColor\" value=\"#ff3366\"> \n        <select title=\"Icons\" name=\"iconsCount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n            <option value=\"5\" selected>5</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background4.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#6670a9\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"color\" title=\"color2\" name=\"color2\" condition=\"bg.type=='color'\" value=\"#7fdbfd\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.9\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"col-md-8 align-center\">\n                <h2 class=\"pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">\n                    FOLLOW CHA BOI!\n                </h2>\n                <div class=\"social-list pl-0 mb-0\">\n                    <a href=\"https://twitter.com/partiallyzen\" target=\"_blank\">\n                        <span mbr-icon class=\"px-2 mbr-iconfont mbr-iconfont-social socicon-twitter socicon\"></span>\n                    </a>\n                    <a href=\"https://github.com/partiallyZen/\" target=\"_blank\">\n                        <span mbr-icon class=\"px-2 mbr-iconfont mbr-iconfont-social socicon-github socicon\" mbr-if=\"iconsCount > 1\"></span>\n                    </a>\n                    <a href=\"https://www.instagram.com/partiallyzen/\" target=\"_blank\">\n                        <span mbr-icon class=\"px-2 mbr-iconfont mbr-iconfont-social socicon-instagram socicon\" mbr-if=\"iconsCount > 2\"></span>\n                    </a>\n                    <a href=\"https://www.youtube.com/channel/UC9k1MMCGIVLjgVmaWpXJ4Aw\" target=\"_blank\">\n                        <span mbr-icon class=\"px-2 mbr-iconfont mbr-iconfont-social socicon-youtube socicon\" mbr-if=\"iconsCount > 3\"></span>\n                    </a>\n                    <a href=\"https://www.reddit.com/user/kstauch\" target=\"_blank\">\n                        <span mbr-icon class=\"px-2 mbr-iconfont mbr-iconfont-social socicon-reddit socicon\" mbr-if=\"iconsCount > 4\"></span>\n                    </a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "rHhiHxg1V1",
           "_protectedParams": [],
           "_global": false,
